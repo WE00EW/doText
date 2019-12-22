@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
-func main()  {
+func main() {
 	fmt.Println("hello")
+	gin.New();
 }
