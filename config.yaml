@@ -1,0 +1,3 @@
+host:
+  path: /api
+  port: 8088
