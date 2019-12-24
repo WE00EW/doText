@@ -17,6 +17,7 @@ func startServer(){// Creates a router without any middleware by default
 	r := gin.New()
 
 	// Recovery middleware recovers from any panics and writes a 500 if there was one.
+	config.RootDir()
 	r.Use(gin.Recovery())
 
 	// swagger 接口访问
