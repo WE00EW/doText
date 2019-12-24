@@ -1,7 +1,6 @@
 package router
 
 import (
-	"doText/api/test"
 	"doText/system"
 	"doText/system/config"
 	"github.com/gin-gonic/gin"
@@ -26,16 +25,6 @@ func useSystemRouters(eng *gin.Engine, rg *gin.RouterGroup) {
 	rg.GET("/host", system.Host)
 	rg.GET("/healthz", system.Healthz)
 }
-
-// 定义业务路由
-func useBizRouters(rg *gin.RouterGroup) {
-	teRg:=rg.Group("test")
-	{
-		teRg.POST("doTest", test.DoTest)
-	}
-}
-
-
 
 // Index returns a handler
 func index(ctx *gin.Context) {
