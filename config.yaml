@@ -1,3 +1,13 @@
 host:
   path: /api
   port: 8088
+
+
+db:
+  dialect: mysql
+  dbname: do
+  host:
+  user: do
+  key: 31axd321
+  password:
+  prot: 3306
